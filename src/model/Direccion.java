@@ -22,7 +22,7 @@ public class Direccion {
     }
 
     public void setCiudad(String ciudad) {
-        this.ciudad
+        this.ciudad = ciudad;
     }
 
     public String getRegion () {
@@ -30,7 +30,7 @@ public class Direccion {
     }
 
     public void setRegion (String region) {
-        this.region;
+        this.region = region;
     }
 
     @Override
