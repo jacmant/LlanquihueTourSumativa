@@ -37,6 +37,10 @@ public class Persona {
         this.edad = edad;
     }
 
+    public Direccion getDireccion() {
+        return direccion;
+    }
+
     public void setDireccion(Direccion direccion) {
         this.direccion = direccion;
     }
