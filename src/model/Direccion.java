@@ -1,6 +1,10 @@
 package model;
 
+// La dirección de una persona.
+// Una Persona "tiene una" Direccion como atributo: eso es composición.
 public class Direccion {
+
+    // Todo private: desde afuera solo se toca con getters y setters (encapsulamiento)
     private String calle;
     private String ciudad;
     private String region;
@@ -10,14 +14,16 @@ public class Direccion {
         this.ciudad = ciudad;
         this.region = region;
     }
-    public String getCalle () {
+
+    public String getCalle() {
         return calle;
     }
 
-    public void setCalle (String calle) {
+    public void setCalle(String calle) {
         this.calle = calle;
     }
-    public String getCiudad () {
+
+    public String getCiudad() {
         return ciudad;
     }
 
@@ -25,14 +31,15 @@ public class Direccion {
         this.ciudad = ciudad;
     }
 
-    public String getRegion () {
+    public String getRegion() {
         return region;
     }
 
-    public void setRegion (String region) {
+    public void setRegion(String region) {
         this.region = region;
     }
 
+    // Muestra la dirección en una sola línea
     @Override
     public String toString() {
         return calle + ", " + ciudad + ", " + region;
