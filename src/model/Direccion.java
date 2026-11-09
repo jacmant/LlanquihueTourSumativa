@@ -33,5 +33,8 @@ public class Direccion {
         this.region;
     }
 
+    @Override
+    public String toString() {
+        return calle + ", " + ciudad + ", " + region;
     }
 }
